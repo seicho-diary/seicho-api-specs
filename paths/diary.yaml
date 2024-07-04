@@ -1,0 +1,19 @@
+get:
+  summary: Get a diary entry by ID
+  description: Retrieve a single diary entry by its ID.
+  parameters:
+    - name: id
+      in: path
+      required: true
+      description: ID of the diary entry to retrieve.
+      schema:
+        type: string
+  responses:
+    '200':
+      description: A diary entry.
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/DiaryEntry.yaml'
+    '404':
+      description: Diary entry not found.

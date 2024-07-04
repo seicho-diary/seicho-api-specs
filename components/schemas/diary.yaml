@@ -1,0 +1,15 @@
+type: object
+properties:
+  id:
+    type: string
+    description: Unique identifier for the diary entry.
+  title:
+    type: string
+    description: Title of the diary entry.
+  content:
+    type: string
+    description: Content of the diary entry.
+  date:
+    type: string
+    format: date-time
+    description: Date and time when the diary entry was created or updated.
