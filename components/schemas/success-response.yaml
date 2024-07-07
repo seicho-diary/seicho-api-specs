@@ -1,0 +1,11 @@
+type: object
+properties:
+  status:
+    type: string
+    description: status, SUCCESS, ERROR, FAIL, PENDING, UNAUTHORIZED
+  message:
+    type: string
+    description: message of the status
+  code:
+    type: number
+    description: status code for the request

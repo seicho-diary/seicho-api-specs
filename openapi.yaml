@@ -25,3 +25,5 @@ components:
       allOf:
         - $ref: './components/schemas/diary.yaml'
         - $ref: './components/schemas/diary-shareable.yaml'
+    SuccessResponse:
+      $ref: './components/schemas/success-response.yaml'
