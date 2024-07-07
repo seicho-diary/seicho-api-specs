@@ -14,6 +14,8 @@ paths:
     $ref: './paths/signup.yaml'
   /add-entry:
     $ref: './paths/add_diary_entry.yaml'
+  /diary-entries-list:
+    $ref: './paths/diary_entries_list.yaml'
 
 components:
   schemas:
@@ -27,3 +29,5 @@ components:
         - $ref: './components/schemas/diary-shareable.yaml'
     SuccessResponse:
       $ref: './components/schemas/success-response.yaml'
+    DiaryEnries:
+        $ref: './components/schemas/journal-entries.yaml'

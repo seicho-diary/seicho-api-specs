@@ -1,0 +1,17 @@
+type: object
+properties:
+  journal_entries:
+    type: array
+    items:
+      type: object
+      properties:
+        title:
+          type: string
+          description: title of the journal entry.
+        entry_date:
+          type: string
+          format: date-time
+          description: entry date
+        is_shareable:
+          type: boolean
+          description: is diary entry shareable?

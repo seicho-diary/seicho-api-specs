@@ -1,0 +1,25 @@
+get:
+  summary: get diary entries for a user
+  description: Retrieve list of diary entries for the users. User can retreive data for period of time
+  parameters:
+    - name: from
+      in: path
+      required: true
+      description: From date.
+      schema:
+        type: string
+    - name: to
+      in: path
+      required: true
+      description: To date.
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Diary entry list.
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/journal-entries.yaml'
+    '404':
+      description: Diary entry not found

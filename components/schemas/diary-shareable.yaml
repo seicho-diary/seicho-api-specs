@@ -1,5 +1,5 @@
 type: object
 properties:
   is_shareable:
-    type: string
+    type: bool
     description: is diary entry shareable?
