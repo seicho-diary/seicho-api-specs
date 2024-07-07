@@ -1,0 +1,5 @@
+type: object
+properties:
+  is_shareable:
+    type: string
+    description: is diary entry shareable?

@@ -12,6 +12,8 @@ paths:
     $ref: './paths/diary.yaml'
   /signup:
     $ref: './paths/signup.yaml'
+  /add-entry:
+    $ref: './paths/add_diary_entry.yaml'
 
 components:
   schemas:
@@ -19,3 +21,7 @@ components:
       $ref: './components/schemas/diary.yaml'
     SignUp:
       $ref: './components/schemas/sign-up.yaml'
+    DiaryEntry:
+      allOf:
+        - $ref: './components/schemas/diary.yaml'
+        - $ref: './components/schemas/diary-shareable.yaml'
