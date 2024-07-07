@@ -10,8 +10,12 @@ servers:
 paths:
   /entries/{id}:
     $ref: './paths/diary.yaml'
+  /signup:
+    $ref: './paths/signup.yaml'
 
 components:
   schemas:
     Diary:
       $ref: './components/schemas/diary.yaml'
+    SignUp:
+      $ref: './components/schemas/sign-up.yaml'

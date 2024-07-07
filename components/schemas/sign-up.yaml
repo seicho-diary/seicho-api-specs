@@ -1,0 +1,33 @@
+type: object
+properties:
+  username:
+    type: string
+    description: Unique username.
+  first_name:
+    type: string
+    description: First name.
+  last_name:
+    type: string
+    description: Last name.
+  date_of_birth:
+    type: string
+    format: date
+    description: Date of birth.
+  sex:
+    type: string
+    description: Sex.
+  email_after_years_of:
+    type: number
+    description: after how many years email to be sent
+    format: int64
+  email_addresses:
+    type: array
+    items:
+      type: object
+      properties:
+        email_id:
+          type: string
+          description: email address of relative/close friend.
+        relationship:
+          type: string
+          description: relationshipt to the writer.

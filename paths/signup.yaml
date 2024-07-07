@@ -1,0 +1,18 @@
+post:
+  summary: user signup
+  description: Create a profile when user signup.
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: '../components/schemas/sign-up.yaml'
+  responses:
+    '200':
+      description: Signup response.
+      content:
+        application/json:
+          schema:
+            $ref: '../components/schemas/sign-up.yaml'
+    '500':
+      description: Error signing up
