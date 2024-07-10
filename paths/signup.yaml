@@ -13,6 +13,6 @@ post:
       content:
         application/json:
           schema:
-            $ref: '../components/schemas/sign-up.yaml'
+            $ref: '../components/schemas/success-response.yaml'
     '500':
       description: Error signing up
